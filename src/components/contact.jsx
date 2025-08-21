@@ -24,18 +24,20 @@ export default function Contact() {
           </span>
         </div>
         <form action="" className="w-full border border-white rounded-xl p-4">
-          <div className="flex flex-row gap-2 w-full">
-            <div className="flex flex-row p-4 w-full border">
-                <FaUser />
-              <input type="text" name="" id="" />
-            </div>
-            <div className="flex flex-row p-4 w-full">
-                <MdEmail />
-              <input type="text" name="" id="" />
-            </div>
+          <div className="flex flex-col gap-2 mb-4">
+            <label htmlFor="name" className="text-xl">Name</label>
+            <input type="text" name="name" id="name" placeholder="your name" required className="bg-transparent border border-white/50 p-2 text-base rounded-lg"/>
+          </div>
+          <div className="flex flex-col gap-2 mb-4">
+            <label htmlFor="email" className="text-xl">Email</label>
+            <input type="email" name="email" id="email" placeholder="email@gmail.com" required className="bg-transparent border border-white/50 p-2 text-base rounded-lg"/>
+          </div>
+          <div className="flex flex-col gap-2 mb-4">
+            <label htmlFor="message" className="text-xl">Message</label>
+            <textarea name="message" id="message" placeholder="message" required className="h-32 bg-transparent border border-white/50 p-2 text-base rounded-lg"></textarea>
           </div>
           <div>
-            <textarea name="" id=""></textarea>
+            <button type="submit" className="flex py-2 px-4 bg-blue-500 transform transition-colors duration-300 hover:bg-blue-800 text-lg rounded-lg">Send</button>
           </div>
         </form>
       </div>

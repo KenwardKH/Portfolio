@@ -41,7 +41,7 @@ export default function Achievement() {
         {achievements.map((item, index) => (
           <div
             key={index}
-            className="bg-white/10 h-fit backdrop-blur-md rounded-2xl overflow-hidden shadow-lg border border-white/10 transition-all duration-300 hover:translate-y-[-4px] hover:shadow-2xl"
+            className="bg-white/10 mx-8 md:m-0 h-fit backdrop-blur-md rounded-2xl overflow-hidden shadow-lg border border-white/10 transition-all duration-300 hover:translate-y-[-4px] hover:shadow-2xl"
           >
             <div className="overflow-hidden">
               <img

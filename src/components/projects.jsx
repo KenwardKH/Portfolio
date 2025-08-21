@@ -10,6 +10,8 @@ import conhub from "../assets/projects/conhub.png";
 import atk_sinar_pelangi_1 from "../assets/projects/atk_sinar_pelangi_1.png";
 import atk_sinar_pelangi_2 from "../assets/projects/atk_sinar_pelangi_2.png";
 import atk_sinar_pelangi_3 from "../assets/projects/atk_sinar_pelangi_3.png";
+import cover_movie1 from "../assets/projects/cover_movie1.png";
+import cover_movie2 from "../assets/projects/cover_movie2.png";
 import { FaCss3Alt, FaExternalLinkAlt, FaHtml5, FaLaravel, FaPhp, FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiKotlin, SiMysql } from "react-icons/si";
@@ -25,6 +27,7 @@ export default function Projects() {
 
   const projects = [
     {
+      cover_img: [quafe_1, quafe_2, quafe_3],
       img: [quafe_1, quafe_2, quafe_3],
       title: "Quafe – Coffee Shop Website",
       desc: "A stylish coffee shop website that allows customers to order menu items online, while owners manage menus and track order history effortlessly.",
@@ -58,6 +61,7 @@ export default function Projects() {
       link: "https://github.com/KenwardKH/Project_Proweb",
     },
     {
+      cover_img: [conhub],
       img: [conhub],
       title: "ConHub – Live Concert Platform",
       desc: "A modern platform for booking concert tickets online, with an admin panel to manage and update concert schedules in real time.",
@@ -81,6 +85,7 @@ export default function Projects() {
       link: "https://github.com/KenwardKH/Project-PPWL",
     },
     {
+      cover_img: [atk_sinar_pelangi_1, atk_sinar_pelangi_2, atk_sinar_pelangi_3],
       img: [atk_sinar_pelangi_1, atk_sinar_pelangi_2, atk_sinar_pelangi_3],
       title: "Sinar Pelangi – Smart Stationery Store",
       desc: "An online store where customers can easily order stationery products, while owners manage operations and inventory efficiently.",
@@ -109,6 +114,7 @@ export default function Projects() {
       link: "https://github.com/KenwardKH/Project_IMK",
     },
     {
+      cover_img: [cover_movie1, cover_movie2],
       img: [movie81_1, movie81_2, movie81_3, movie81_4],
       title: "Movie 81 – Movie Discovery App",
       desc: "A mobile application showcasing now-playing and popular movies with ratings, designed for quick and engaging browsing.",
@@ -127,7 +133,7 @@ export default function Projects() {
   useEffect(() => {
     let interval;
     if (hoverIndex !== null) {
-      const imgs = projects[hoverIndex].img;
+      const imgs = projects[hoverIndex].cover_img;
       if (imgs.length > 1) {
         interval = setInterval(() => {
           // Update hoverImageIndex untuk menampilkan gambar berikutnya
@@ -170,24 +176,24 @@ export default function Projects() {
           Here are some of my projects that I have worked on.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-7xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-14 w-full max-w-7xl">
         {projects.map((item, index) => {
           // Fungsi untuk menentukan gambar mana yang ditampilkan di card
           const getCardImage = () => {
-            const isMultipleImages = Array.isArray(item.img);
+            const isMultipleImages = Array.isArray(item.cover_img);
 
             // Jika sedang di-hover, tampilkan gambar sesuai index slideshow
             if (hoverIndex === index && isMultipleImages) {
-              return item.img[hoverImageIndex];
+              return item.cover_img[hoverImageIndex];
             }
 
             // Jika ada banyak gambar tapi tidak di-hover → pakai gambar pertama
             if (isMultipleImages) {
-              return item.img[0];
+              return item.cover_img[0];
             }
 
             // Jika hanya ada satu gambar → langsung tampilkan
-            return item.img;
+            return item.cover_img;
           };
 
           const showImg = getCardImage();
@@ -211,7 +217,7 @@ export default function Projects() {
                   key={showImg}
                   src={showImg}
                   alt={item.title}
-                  className="w-full h-64 object-cover"
+                  className="w-full h-72 object-cover"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
@@ -238,6 +244,7 @@ export default function Projects() {
         })}
       </div>
 
+      {/* Modal untuk menampilkan detail proyek */}
       {selectedProject && (
         <div className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-start justify-center z-50 p-4 overflow-auto">
           <div className="relative bg-white/5 backdrop-blur-lg rounded-3xl w-full max-w-4xl p-10 mt-12 mb-12 animate-fadeIn">
