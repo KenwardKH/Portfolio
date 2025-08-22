@@ -17,7 +17,7 @@ export default function Home() {
         <div className="flex-1 flex justify-center items-center">
           <div className="w-full max-w-[400px] md:max-w-[600px] aspect-square">
             <Spline
-              scene="https://prod.spline.design/Q4HzUMSbe7NZVFgn/scene.splinecode"
+               scene="https://prod.spline.design/7WfmWtcJgm7nt8zR/scene.splinecode"
               style={{ pointerEvents: "none" }}
             />
           </div>
