@@ -1,7 +1,7 @@
 import About from "./components/about";
 import Achievement from "./components/achievement";
 import Contact from "./components/contact";
-import Home from "./components/home";
+import Hero from "./components/hero";
 import MouseCursor from "./components/mouseCursor";
 import Navbar from "./components/navbar";
 import Projects from "./components/projects";
@@ -10,7 +10,7 @@ function App() {
     <div className="min-h-screen bg-[#27233e] text-white">
       <MouseCursor />
       <Navbar />
-      <Home />
+      <Hero />
       <About />
       <Achievement />
       <Projects />
