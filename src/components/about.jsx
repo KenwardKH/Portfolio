@@ -6,7 +6,6 @@ import {
   FaFigma,
   FaFileDownload,
   FaHtml5,
-  FaJava,
   FaLaravel,
   FaPhp,
   FaPython,

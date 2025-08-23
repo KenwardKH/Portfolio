@@ -28,7 +28,7 @@ export default function Achievement() {
       {/* Header */}
       <div className="text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold tracking-wide">
-          Achievements & Competition
+          Achievements & Competitions
         </h1>
         <p className="text-base md:text-lg mt-3 text-gray-300">
           Here are some of my achievements and competitions that I have
