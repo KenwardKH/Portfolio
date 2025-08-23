@@ -3,6 +3,7 @@ import profilePic from "../assets/profile.jpg";
 import cv from "../assets/Kenward Keene Hermanto CV.pdf";
 import {
   FaCss3Alt,
+  FaFigma,
   FaFileDownload,
   FaHtml5,
   FaJava,
@@ -75,7 +76,7 @@ export default function About() {
           </div>
           <div className="mt-10">
             <h2 className="text-lg font-semibold text-white">
-              Programming language & Framework I learned
+              Technologies & Tools I’ve Learned
             </h2>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 mt-6">
               {/* HTML */}
@@ -140,14 +141,14 @@ export default function About() {
 
               {/* C++ */}
               <div className="flex flex-col items-center bg-white/5 p-4 rounded-xl shadow-lg hover:scale-110 transition-transform duration-300 hover:shadow-gray-500/50">
-                <TbBrandCpp className="text-4xl text-gray-500" />
+                <TbBrandCpp className="text-4xl text-gray-300" />
                 <span className="mt-2 text-sm text-gray-200">C++</span>
               </div>
 
-              {/* Java */}
-              <div className="flex flex-col items-center bg-white/5 p-4 rounded-xl shadow-lg hover:scale-110 transition-transform duration-300 hover:shadow-red-500/50">
-                <FaJava className="text-4xl text-red-500" />
-                <span className="mt-2 text-sm text-gray-200">Java</span>
+              {/* Figma */}
+              <div className="flex flex-col items-center bg-white/5 p-4 rounded-xl shadow-lg hover:scale-110 transition-transform duration-300 hover:shadow-white/50">
+                <FaFigma className="text-4xl text-white" />
+                <span className="mt-2 text-sm text-gray-200">Figma</span>
               </div>
             </div>
           </div>
