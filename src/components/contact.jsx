@@ -67,7 +67,7 @@ export default function Contact() {
             rel="noopener noreferrer"
             className="flex items-center gap-4 text-lg p-4 border border-white/20 rounded-xl hover:border-blue-500 transition-colors duration-300"
           >
-            <FaGithub className="text-blue-500 text-xl" /> kenwardkh5@gmail.com
+            <FaGithub className="text-blue-500 text-xl" /> KenwardKH
           </a>
           <a
             href="https://www.linkedin.com/in/kenward-keene-hermanto-054993325/"
