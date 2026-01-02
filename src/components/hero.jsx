@@ -55,7 +55,7 @@ export default function Hero() {
           <span className="bg-white/10 px-3 py-2 rounded-full text-base hover:bg-white/30 transition">Web Development</span>
           <span className="bg-white/10 px-3 py-2 rounded-full text-base hover:bg-white/30 transition">Mobile Development</span>
           <span className="bg-white/10 px-3 py-2 rounded-full text-base hover:bg-white/30 transition">UI/UX Design</span>
-          <span className="bg-white/10 px-3 py-2 rounded-full text-base hover:bg-white/30 transition">Cyber Security</span>
+          <span className="bg-white/10 px-3 py-2 rounded-full text-base hover:bg-white/30 transition">Machine Learning</span>
         </motion.div>
       </motion.div>
     </section>

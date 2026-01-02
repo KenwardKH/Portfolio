@@ -12,9 +12,17 @@ import atk_sinar_pelangi_2 from "../assets/projects/atk_sinar_pelangi_2.png";
 import atk_sinar_pelangi_3 from "../assets/projects/atk_sinar_pelangi_3.png";
 import cover_movie1 from "../assets/projects/cover_movie1.png";
 import cover_movie2 from "../assets/projects/cover_movie2.png";
+import mockup_belut from "../assets/projects/mockup_belut.png";
+import cover_belut1 from "../assets/projects/cover_belut1.png";
+import cover_belut2 from "../assets/projects/cover_belut2.png";
+import belut1 from "../assets/projects/belut1.png";
+import belut2 from "../assets/projects/belut2.png";
+import belut3 from "../assets/projects/belut3.png";
+import belut4 from "../assets/projects/belut4.png";
+
 import { FaCss3Alt, FaExternalLinkAlt, FaHtml5, FaLaravel, FaPhp, FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiKotlin, SiMysql } from "react-icons/si";
+import { SiKotlin, SiMysql, SiFirebase } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io";
 import { motion } from "framer-motion";
 import { a, button, div, pre } from "framer-motion/client";
@@ -125,7 +133,26 @@ export default function Projects() {
           color: "text-green-400",
         },
       ],
-      link: "https://github.com/KenwardKH/Project_Proweb",
+      link: "https://github.com/KenwardKH/MobileDevProject",
+    },
+    {
+      cover_img: [mockup_belut, cover_belut1, cover_belut2],
+      img: [belut1, belut2, belut3, belut4],
+      title: "BELUT — UTBK Learning App",
+      desc: "A mobile learning application designed to help students prepare for UTBK through interactive practice questions, detailed score analysis, and engaging tryout simulations.",
+      tech: [
+        {
+          icon: <SiKotlin />,
+          name: "Kotlin",
+          color: "text-green-400",
+        },
+        {
+          icon: <SiFirebase />,
+          name: "Firebase",
+          color: "text-red-400",
+        }
+      ],
+      link: "https://github.com/Drakenvei/TubesPM",
     },
   ];
 
@@ -176,7 +203,7 @@ export default function Projects() {
           Here are some of my projects that I have worked on.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-14 w-full max-w-7xl">
+      <div className="flex flex-wrap justify-center gap-14 w-full max-w-7xl">
         {projects.map((item, index) => {
           // Fungsi untuk menentukan gambar mana yang ditampilkan di card
           const getCardImage = () => {
@@ -201,7 +228,7 @@ export default function Projects() {
           return (
             <div
               key={index}
-              className="bg-white/5 backdrop-blur-md rounded-3xl overflow-hidden shadow-lg border border-white/10 cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
+              className="w-full md:w-[calc(50%-30px)] lg:max-w-[550px] bg-white/5 backdrop-blur-md rounded-3xl overflow-hidden shadow-lg border border-white/10 cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
               onMouseEnter={() => {
                 setHoverIndex(index); // Set index proyek saat hover
                 setHoverImageIndex(0); // Reset index gambar saat hover
