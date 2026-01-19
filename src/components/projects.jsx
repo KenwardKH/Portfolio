@@ -69,30 +69,6 @@ export default function Projects() {
       link: "https://github.com/KenwardKH/Project_Proweb",
     },
     {
-      cover_img: [conhub],
-      img: [conhub],
-      title: "ConHub – Live Concert Platform",
-      desc: "A modern platform for booking concert tickets online, with an admin panel to manage and update concert schedules in real time.",
-      tech: [
-        {
-          icon: <FaLaravel />,
-          name: "Laravel",
-          color: "text-red-400",
-        },
-        {
-          icon: <FaCss3Alt />,
-          name: "CSS",
-          color: "text-blue-500",
-        },
-        {
-          icon: <SiMysql />,
-          name: "MySQL",
-          color: "text-blue-700",
-        },
-      ],
-      link: "https://github.com/KenwardKH/Project-PPWL",
-    },
-    {
       cover_img: [atk_sinar_pelangi_1, atk_sinar_pelangi_2, atk_sinar_pelangi_3],
       img: [atk_sinar_pelangi_1, atk_sinar_pelangi_2, atk_sinar_pelangi_3],
       title: "Sinar Pelangi – Smart Stationery Store",
