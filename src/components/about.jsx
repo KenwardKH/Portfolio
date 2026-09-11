@@ -55,7 +55,7 @@ export default function About() {
               <p className="text-base sm:text-lg max-w-xl leading-relaxed">
                 Hello! I’m <span className="font-semibold text-blue-400">Kenward Keene Hermanto</span>, a passionate tech enthusiast
                 and aspiring software developer with a strong interest in web
-                development, mobile applications, and cybersecurity.
+                development, mobile applications, and machine learning.
               </p>
               <p className="text-base sm:text-lg max-w-xl leading-relaxed">
                 Currently, I’m studying at Universitas Sumatera Utara, where I
