@@ -31,7 +31,7 @@ export default function Hero() {
           transition={{ delay: 0.4, duration: 1 }}
         >
           Welcome to my portfolio! I’m a passionate developer specializing in
-          web, mobile, and cybersecurity. Scroll down to explore my projects and
+          web, mobile, and machine learning. Scroll down to explore my projects and
           skills.
         </motion.p>
 
